@@ -1,0 +1,23 @@
+.animated-text {
+  background: linear-gradient(
+    90deg,
+    #d51b57,
+    #BEA6FB,
+    #d51b57,
+    #E1F998,
+    #ffb3da
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  color: transparent;
+  animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
