@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import "./navbar.module.css";
 import { FiAlignRight } from "react-icons/fi";
 import { HashLink } from "react-router-hash-link";
 import { GrClose } from "react-icons/gr";

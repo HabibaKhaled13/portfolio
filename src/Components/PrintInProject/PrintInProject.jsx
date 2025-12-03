@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/printin-logo.avif";
-import img from "../../assets/Printin.png";
+import img from "../../assets/printin.png";
 import style from "./PrintInProject.module.css";
 import { HiArrowRightCircle } from "react-icons/hi2";
 import { HiArrowLongRight } from "react-icons/hi2";
