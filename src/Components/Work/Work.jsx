@@ -54,12 +54,12 @@ const allProjects = [
     title: "Oil",
     // link: "/oil",
   },
-  {
-    id: 6,
-    img: img6,
-    title: "Daniels",
-    // link: "/daniels",
-  },
+  // {
+  //   id: 6,
+  //   img: img6,
+  //   title: "Daniels",
+  //   // link: "/daniels",
+  // },
   {
     id: 7,
     img: img7,
@@ -83,11 +83,11 @@ const allProjects = [
     img: img10,
     // link: "/alradoon",
   },
-  {
-    id: 11,
-    img: img11,
-    // link:,
-  },
+  // {
+  //   id: 11,
+  //   img: img11,
+  //   // link:,
+  // },
   {
     id: 12,
     img: img12,
