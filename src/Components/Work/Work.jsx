@@ -5,12 +5,12 @@ import img2 from "../../assets/courses.png";
 import img3 from "../../assets/yallagrow.png";
 import img4 from "../../assets/ahwatak.png";
 import img5 from "../../assets/oil.png";
-import img6 from "../../assets/daniels.png";
+// import img6 from "../../assets/daniels.png";
 import img7 from "../../assets/bakery.png";
 import img8 from "../../assets/allam.png";
 import img9 from "../../assets/ewan.png";
 import img10 from "../../assets/alradoon.png";
-import img11 from "../../assets/concord.png";
+// import img11 from "../../assets/concord.png";
 import img12 from "../../assets/elsafer.png";
 import img13 from "../../assets/roza.png";
 import img14 from "../../assets/etmanna.png";
@@ -122,9 +122,9 @@ const allProjects = [
   },
 ];
 
-const shopify=[{
+// const shopify=[{
   
-}]
+// }]
 
 export default function Work() {
   return (
@@ -303,7 +303,7 @@ export default function Work() {
                 </div> */}
               </TabItem>
               <TabItem title="WordPress">
-                <div className="flex flex-wrap   gap-5">
+                {/* <div className="flex flex-wrap   gap-5">
                   <div className="w-[32%]">
                     <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
                       <img src={img8} alt="" className="w-full rounded-t-md" />
@@ -384,7 +384,7 @@ export default function Work() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </TabItem>
               <TabItem title="Shopify">
                 {/* <div className="flex flex-wrap   gap-5">

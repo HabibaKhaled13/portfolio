@@ -62,9 +62,7 @@ function App() {
         { path: "etmanna-running", element: <EtmannaRunningProject /> },
       ],
     },
-  ],  {
-    basename: "/portfolio",
-  });
+  ],);
 
   useEffect(() => {
 
