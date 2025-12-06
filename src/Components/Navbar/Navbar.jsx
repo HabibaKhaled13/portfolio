@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FiAlignRight } from "react-icons/fi";
 import { HashLink } from "react-router-hash-link";
 import { GrClose } from "react-icons/gr";
@@ -11,29 +11,29 @@ export default function Navbar() {
   return (
     <>
       <header>
-        <nav className="bg-[#080808] md:block hidden text-[#CFD1BC] fixed  z-20 top-3 start-80 end-80 rounded-full px-7">
+        <nav className="bg-[#080808] md:block  hidden text-[#CFD1BC] fixed  z-20 top-3 start-80 end-80 rounded-full px-7">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 ">
             <Link to="/">
              
               <img src={logo} alt="Logo" width={70} />
             </Link>
 
-            <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+            <div className="hidden w-full md:block  md:w-auto" id="navbar-default">
               <ul className=" flex flex-col text-sm font-bold p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
                 <li>
-                  <NavLink
+                  <Link
                     to=""
-                    className=" block "
+                    className=" block hover:text-[#EB1C5F] duration-300 transition-all "
                     aria-current="page"
                   >
                     Home
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
                   <HashLink
                     smooth
                     to="/#about"
-                    className="  block "
+                    className="  block hover:text-[#EB1C5F] duration-300 transition-all "
                     aria-current="page"
                   >
                     About
@@ -43,21 +43,25 @@ export default function Navbar() {
                   <HashLink
                     smooth
                     to="/#services"
-                    className=" block  "
+                    className=" block hover:text-[#EB1C5F] duration-300 transition-all  "
                   >
                     Services
                   </HashLink>
                 </li>
                 <li>
-                  <NavLink to="/work" className=" block ">
+                  <Link to="/work" className=" block hover:text-[#EB1C5F] duration-300 transition-all ">
                     Work
-                  </NavLink>
+                  </Link>
                 </li>
          
 
                 <li>
-                  <HashLink smooth to="/#contact" className=" block  ">
-                    Contact
+                        <HashLink
+                    smooth
+                    to="/#contact"
+                    className=" block hover:text-[#EB1C5F] duration-300 transition-all  "
+                  >
+                   Contact
                   </HashLink>
                 </li>
               </ul>
@@ -65,7 +69,7 @@ export default function Navbar() {
           </div>
         </nav>
 
-        <nav className="bg-[#080808] md:hidden block text-[#CFD1BC] fixed z-20 top-3 start-3 end-3 rounded-full md:px-7 px-4">
+        <nav className="bg-[#080808] md:hidden block hover:text-[#EB1C5F] duration-300 transition-all text-[#CFD1BC] fixed z-20 top-3 start-3 end-3 rounded-full md:px-7 px-4">
           <div className="flex justify-between items-center">
             <Link to="/">
               <img src={logo} alt="Logo" width={70} />
@@ -95,9 +99,9 @@ export default function Navbar() {
 
             <ul className="text-2xl font-bold pt-5 text-center">
               <li>
-                <NavLink onClick={closeMenu} to="/" className="my-7 block">
+                <Link onClick={closeMenu} to="/" className="my-7 block hover:text-[#EB1C5F] duration-300 transition-all">
                   Home
-                </NavLink>
+                </Link>
               </li>
 
               <li>
@@ -105,7 +109,7 @@ export default function Navbar() {
                   smooth
                   onClick={closeMenu}
                   to="/#about"
-                  className="my-7 block"
+                  className="my-7 block hover:text-[#EB1C5F] duration-300 transition-all"
                 >
                   About
                 </HashLink>
@@ -116,16 +120,16 @@ export default function Navbar() {
                   smooth
                   onClick={closeMenu}
                   to="/#services"
-                  className="my-7 block"
+                  className="my-7 block hover:text-[#EB1C5F] duration-300 transition-all"
                 >
                   Services
                 </HashLink>
               </li>
 
               <li>
-                <NavLink onClick={closeMenu} to="/work" className="my-7 block">
+                <Link onClick={closeMenu} to="/work" className="my-7 block hover:text-[#EB1C5F] duration-300 transition-all">
                   Work
-                </NavLink>
+                </Link>
               </li>
 
               <li>
@@ -133,7 +137,7 @@ export default function Navbar() {
                   smooth
                   onClick={closeMenu}
                   to="/#contact"
-                  className="my-7 block"
+                  className="my-7 block hover:text-[#EB1C5F] duration-300 transition-all"
                 >
                   Contact
                 </HashLink>

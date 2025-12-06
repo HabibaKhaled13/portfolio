@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function ContactUs() {
   return (
 <>
-<section id="contact" className='scroll-mt-20 md:py-20 py-12'>
+<section id="contact" className='scroll-mt-5 md:py-20 py-12'>
   <div className="mx-auto md:px-14 px-7">
 <div className="flex justify-between flex-wrap">
   <div className="md:w-1/2 w-full">

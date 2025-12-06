@@ -5,12 +5,12 @@ import img2 from "../../assets/courses.png";
 import img3 from "../../assets/yallagrow.png";
 import img4 from "../../assets/ahwatak.png";
 import img5 from "../../assets/oil.png";
-// import img6 from "../../assets/daniels.png";
+import img6 from "../../assets/daniels.png";
 import img7 from "../../assets/bakery.png";
 import img8 from "../../assets/allam.png";
 import img9 from "../../assets/ewan.png";
 import img10 from "../../assets/alradoon.png";
-// import img11 from "../../assets/concord.png";
+import img11 from "../../assets/concord.png";
 import img12 from "../../assets/elsafer.png";
 import img13 from "../../assets/roza.png";
 import img14 from "../../assets/etmanna.png";
@@ -19,8 +19,37 @@ import img16 from "../../assets/jewerly.png";
 import img17 from "../../assets/printin.png";
 import img18 from "../../assets/wardrobe.png";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const allProjects = [
+  {
+    id: 3,
+    img: img3,
+    title: "Yalla Grow",
+    link: "/yallagrow",
+  },
+    {
+    id: 17,
+    img: img17,
+    link: "/print-in",
+  },
+  {
+    id: 18,
+    img: img18,
+    link: "/wardrobe",
+  },
+  {
+    id: 13,
+    img: img13,
+    title: "Roza Store",
+    link: "/roza",
+  },
+  {
+    id: 14,
+    img: img14,
+    title: "Etmanna Running",
+    link: "/etmanna-running",
+  },
   {
     id: 1,
     img: img1,
@@ -31,45 +60,19 @@ const allProjects = [
     id: 2,
     img: img2,
     title: "Courses",
-
     link: "/courses",
   },
-  {
-    id: 3,
-    img: img3,
-    title: "Yalla Grow",
 
-    link: "/yallagrow",
-  },
   {
     id: 4,
     img: img4,
     title: "Ahwatak",
     // link: "/ahwatak",
   },
-
-  {
-    id: 5,
-    img: img5,
-    title: "Oil",
-    // link: "/oil",
-  },
-  // {
-  //   id: 6,
-  //   img: img6,
-  //   title: "Daniels",
-  //   // link: "/daniels",
-  // },
-  {
-    id: 7,
-    img: img7,
-    title: "Bakery",
-    // link: "/bakery",
-  },
   {
     id: 8,
     img: img8,
-    title: "Allam",
+    title: "Allam EL Bahser",
     // link: "/allam",
   },
   {
@@ -81,74 +84,197 @@ const allProjects = [
   {
     id: 10,
     img: img10,
+    title: "Al Radoon",
     // link: "/alradoon",
   },
-  // {
-  //   id: 11,
-  //   img: img11,
-  //   // link:,
-  // },
+  {
+    id: 11,
+    img: img11,
+    title: "Concord",
+    // link:,
+  },
+  {
+    id: 5,
+    img: img5,
+    title: "Princess Natural",
+    // link: "/oil",
+  },
+
+  {
+    id: 7,
+    img: img7,
+    title: "Bakery",
+    // link: "/bakery",
+  },
+
   {
     id: 12,
     img: img12,
+    title: "El Safer"
+  },
+
+  {
+    id: 15,
+    img: img15,
+     title: "Art Elegancy"
+  },
+  {
+    id: 16,
+    img: img16,
+     title: "Jewerly"
+  },
+    {
+    id: 6,
+    img: img6,
+    title: "Daniels",
+    // link: "/daniels",
+  },
+
+];
+const next = [
+  {
+    id: 3,
+    img: img3,
+    title: "Yalla Grow",
+    link: "/yallagrow",
+  },
+];
+const js = [
+  {
+    id: 4,
+    img: img4,
+    title: "Ahwatak",
+    // link: "/allam",
+  },
+  {
+    id: 5,
+    img: img5,
+    title: "Princess Natural",
+    // link: "/ewan-el-hegaz",
+  },
+  {
+    id: 6,
+    img: img6,
+    title: "Danials",
+    // link: "/alradoon",
+  },
+  {
+    id: 7,
+    img: img7,
+    title: "Bakery",
+    // link: "/alradoon",
+  },
+];
+
+const react = [
+  {
+    id: 1,
+    img: img1,
+    title: "FreshCart",
+    link: "/freshcart",
+  },
+  {
+    id: 2,
+    img: img2,
+    title: "Courses",
+    link: "/courses",
+  },
+];
+
+const wordpress = [
+  {
+    id: 8,
+    img: img8,
+    title: "Allam EL Bahser",
+    // link: "/allam",
+  },
+  {
+    id: 9,
+    img: img9,
+    title: "Ewan El Hegaz",
+    // link: "/ewan-el-hegaz",
+  },
+  {
+    id: 10,
+    img: img10,
+    title: "Al Radoon",
+    // link: "/alradoon",
+  },
+  {
+    id: 11,
+    img: img11,
+    title: "Concored",
+    // link:,
+  },
+  {
+    id: 12,
+    img: img12,
+    title: "El Safeer",
+    // link:,
+  },
+];
+const shopify = [
+  {
+    id: 17,
+    img: img17,
+    title: "Print In",
+    link: "/print-in",
   },
   {
     id: 13,
     img: img13,
+    title: "Roza Store",
     link: "/roza",
   },
   {
     id: 14,
     img: img14,
+    title: "Etmanna Running",
     link: "/etmanna-running",
   },
   {
     id: 15,
     img: img15,
+    title: "Art Elegancy",
   },
   {
     id: 16,
     img: img16,
+    title: "Jewerly Art",
   },
-  {
-    id: 17,
-    img: img17,
-    link: "/print-in",
-  },
+];
+const easyOrders = [
   {
     id: 18,
     img: img18,
+    title: "Wardrobe",
     link: "/wardrobe",
   },
 ];
-
-// const shopify=[{
-  
-// }]
-
 export default function Work() {
   return (
     <>
-      <section className="h-[60vh]">
-        <div className="title text-center mb-7 flex flex-col h-[90vh] justify-center">
+      <section className="h-[55vh] md:h-[70vh]">
+        <div className="title text-center mb-7 flex flex-col md:h-[95vh] h-[74vh] justify-center">
           <span className="text-black ">بنحوّل فكرتك لكود</span>
-          <h2 className="text-[#EB1C5F] mt-2 text-6xl font-bold uppercase">
+          <h1 className="text-[#EB1C5F] mt-2 md:text-6xl text-4xl font-bold uppercase">
             Your vision,
             <br /> my development
-          </h2>
-          <div className="btn my-5">
-            <a
-              href="../"
-              className="button border border-black bg-black text-white py-2.5 px-7 uppercase text-sm"
+          </h1>
+          <div className="btn my-8">
+            <HashLink
+              smooth
+              to="#all"
+              className="button border  border-black bg-black text-white py-2.5 px-7 uppercase text-sm"
             >
               View all
-            </a>
+            </HashLink>
           </div>
         </div>
       </section>
 
-      <section className="py-20 ">
-        <div className=" px-14 mx-auto">
+      <section id="all" className="md:py-20 py-10 scroll-mt-20 ">
+        <div className="mx-auto md:px-14 px-7">
           <div className="projects ">
             <Tabs
               aria-label="Default tabs"
@@ -162,9 +288,9 @@ export default function Work() {
               >
                 <div className="flex flex-wrap   gap-5">
                   {allProjects.map((info, index) => (
-                    <div key={index} className="w-[32%]">
+                    <div key={index} className="md:w-[32%]  w-full">
                       <Link to={info.link}>
-                        <div className=" card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
+                        <div className=" card relative rounded-md shadow-md border  border-neutral-300 overflow-hidden group transition-all duration-300">
                           <img
                             src={info.img}
                             alt=""
@@ -185,274 +311,152 @@ export default function Work() {
                 </div>
               </TabItem>
               <TabItem active title="React">
-                {/* <div className="flex flex-wrap   gap-5">
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img1} alt="" className="w-full rounded-t-md" />
-                      <div
-                        className="absolute inset-0 bg-black/70 flex justify-center items-center 
+                <div className="flex flex-wrap   gap-5">
+                  {react.map((info, index) => (
+                    <div key={index} className="md:w-[32%]  w-full">
+                      <Link to={info.link}>
+                        <div className=" card relative rounded-md shadow-md border  border-neutral-300 overflow-hidden group transition-all duration-300">
+                          <img
+                            src={info.img}
+                            alt=""
+                            className="w-full rounded-t-md"
+                          />
+                          <div
+                            className="absolute inset-0 bg-black/70 flex justify-center items-center 
         opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                      >
-                        <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                          See More
-                        </p>
-                      </div>
+                          >
+                            <p className=" text-lg rounded-full font-semibold  text-white ">
+                              {info.title}
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
                     </div>
-                  </div>
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img2} alt="" className="w-full rounded-t-md" />
-                      <div
-                        className="absolute inset-0 bg-black/70 flex justify-center items-center 
-        opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                      >
-                        <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                          See More
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+                  ))}
+                </div>
               </TabItem>
-              <TabItem title="Next.JS">
-                {/* <div className="flex flex-wrap   gap-5">
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img3} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Yalla Grow Company</h3>
+              <TabItem title="Next.js">
+                {next.map((info, index) => (
+                  <div key={index} className="md:w-[32%] w-full">
+                    <Link to={info.link}>
+                      <div className=" card relative rounded-md shadow-md border  border-neutral-300 overflow-hidden group transition-all duration-300">
+                        <img
+                          src={info.img}
+                          alt=""
+                          className="w-full rounded-t-md"
+                        />
                         <div
                           className="absolute inset-0 bg-black/70 flex justify-center items-center 
         opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
                         >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
+                          <p className=" text-lg rounded-full font-semibold  text-white ">
+                            {info.title}
                           </p>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
-                </div> */}
+                ))}
               </TabItem>
               <TabItem title="Js Native">
-                {/* <div className="flex flex-wrap   gap-5">
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img4} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Ahwatak</h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
+                <div className="flex flex-wrap   gap-5">
+                  {js.map((info, index) => (
+                    <div key={index} className="md:w-[32%] w-full">
+                      <Link to={info.link}>
+                        <div className=" card relative rounded-md shadow-md border  border-neutral-300 overflow-hidden group transition-all duration-300">
+                          <img
+                            src={info.img}
+                            alt=""
+                            className="w-full rounded-t-md"
+                          />
+                          <div
+                            className="absolute inset-0 bg-black/70 flex justify-center items-center 
         opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
+                          >
+                            <p className=" text-lg rounded-full font-semibold  text-white ">
+                              {info.title}
+                            </p>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
-                  </div>
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img5} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Princess Oil </h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
-        opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img6} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Daneial</h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
-        opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img7} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Bakery</h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
-        opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+                  ))}
+                </div>
               </TabItem>
               <TabItem title="WordPress">
-                {/* <div className="flex flex-wrap   gap-5">
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img8} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Ahwatak</h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
+                <div className="flex flex-wrap   gap-5">
+                  {wordpress.map((info, index) => (
+                    <div key={index} className="md:w-[32%] w-full">
+                      <Link to={info.link}>
+                        <div className=" card relative rounded-md shadow-md border  border-neutral-300 overflow-hidden group transition-all duration-300">
+                          <img
+                            src={info.img}
+                            alt=""
+                            className="w-full rounded-t-md"
+                          />
+                          <div
+                            className="absolute inset-0 bg-black/70 flex justify-center items-center 
         opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
+                          >
+                            <p className=" text-lg rounded-full font-semibold  text-white ">
+                              {info.title}
+                            </p>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
-                  </div>
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img9} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Princess Oil </h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
-        opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img10} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Daneial</h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
-        opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img11} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Bakery</h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
-        opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img12} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Bakery</h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
-        opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+                  ))}
+                </div>
               </TabItem>
               <TabItem title="Shopify">
-                {/* <div className="flex flex-wrap   gap-5">
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img13} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Ahwatak</h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
+                <div className="flex flex-wrap   gap-5">
+                  {shopify.map((info, index) => (
+                    <div key={index} className="md:w-[32%] w-full">
+                      <Link to={info.link}>
+                        <div className=" card relative rounded-md shadow-md border  border-neutral-300 overflow-hidden group transition-all duration-300">
+                          <img
+                            src={info.img}
+                            alt=""
+                            className="w-full rounded-t-md"
+                          />
+                          <div
+                            className="absolute inset-0 bg-black/70 flex justify-center items-center 
         opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
+                          >
+                            <p className=" text-lg rounded-full font-semibold  text-white ">
+                              {info.title}
+                            </p>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
-                  </div>
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img14} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Princess Oil </h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
+                  ))}
+                </div>
+              </TabItem>
+              <TabItem title="Easy Orders">
+                <div className="flex flex-wrap   gap-5">
+                  {easyOrders.map((info, index) => (
+                    <div key={index} className="md:w-[32%] w-full">
+                      <Link to={info.link}>
+                        <div className=" card relative rounded-md shadow-md border  border-neutral-300 overflow-hidden group transition-all duration-300">
+                          <img
+                            src={info.img}
+                            alt=""
+                            className="w-full rounded-t-md"
+                          />
+                          <div
+                            className="absolute inset-0 bg-black/70 flex justify-center items-center 
         opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
+                          >
+                            <p className=" text-lg rounded-full font-semibold  text-white ">
+                              {info.title}
+                            </p>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
-                  </div>
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img15} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Daneial</h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
-        opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-[32%]">
-                    <div className="card relative rounded-md shadow-md border bg-[#0D0D0D] border-neutral-800 overflow-hidden group transition-all duration-300">
-                      <img src={img16} alt="" className="w-full rounded-t-md" />
-                      <div className="card-title px-4">
-                        <h3 className="  my-2  ">Bakery</h3>
-                        <div
-                          className="absolute inset-0 bg-black/70 flex justify-center items-center 
-        opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
-                        >
-                          <p className="px-4 py-2 text-sm rounded-full font-semibold uppercase text-black bg-[#EB1C5F]">
-                            See More
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+                  ))}
+                </div>
               </TabItem>
             </Tabs>
           </div>

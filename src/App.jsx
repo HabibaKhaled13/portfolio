@@ -75,6 +75,7 @@ function App() {
 
   return (
     <LenisWrapper>
+ 
       {loading && <Loading />} 
       {!loading && <RouterProvider router={router} />} 
     </LenisWrapper>

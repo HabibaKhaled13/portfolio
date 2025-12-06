@@ -17,13 +17,13 @@ h3 {
 span {
   font-family: Montserrat-Arabic;
 }
-.active {
+/* .active {
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-thickness: 2px;
   text-decoration-color: #eb1c5f;
 
-}
+} */
 
 
 @font-face {
