@@ -28,30 +28,35 @@ span {
 
 @font-face {
   font-family: poppins-regular;
-  src: url(./assets/fonts/Poppins-Regular.ttf);
+  src: url(./assets/fonts/Poppins-Regular.woff2);
   font-weight: 400;
+   font-display: swap;
 }
 
 @font-face {
   font-family: Prompt-medium;
-  src: url(./assets/fonts/Prompt-Medium.ttf);
+  src: url(./assets/fonts/Prompt-Medium.woff2);
   font-weight: 500;
+   font-display: swap;
 }
 
 @font-face {
   font-family: Prompt-SemiBold;
-  src: url(./assets/fonts/Prompt-SemiBold.ttf);
+  src: url(./assets/fonts/Prompt-SemiBold.woff2);
   font-weight: 600;
+   font-display: swap;
 }
 
 @font-face {
   font-family: Prompt-Bold;
-  src: url(./assets/fonts/Prompt-Bold.ttf);
+  src: url(./assets/fonts/Prompt-Bold.woff2);
   font-weight: 700;
+   font-display: swap;
 }
 
 @font-face {
   font-family: Montserrat-Arabic;
-  src: url(./assets/fonts/Montserrat-Arabic-Regular.ttf);
+  src: url(./assets/fonts/Montserrat-Arabic-Regular.woff2);
   font-weight: 400;
+   font-display: swap;
 }
