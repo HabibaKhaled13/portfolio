@@ -1,0 +1,62 @@
+@import "tailwindcss";
+h1 {
+  font-family: Prompt-Bold;
+}
+h2,
+
+h4,
+h5,
+h6 {
+  font-family: Prompt-semibold;
+}
+p,
+a,
+h3 {
+  font-family: poppins-regular;
+}
+span {
+  font-family: Montserrat-Arabic;
+}
+/* .active {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #eb1c5f;
+
+} */
+
+
+@font-face {
+  font-family: poppins-regular;
+  src: url(./assets/fonts/Poppins-Regular.woff2);
+  font-weight: 400;
+   font-display: swap;
+}
+
+@font-face {
+  font-family: Prompt-medium;
+  src: url(./assets/fonts/Prompt-Medium.woff2);
+  font-weight: 500;
+   font-display: swap;
+}
+
+@font-face {
+  font-family: Prompt-SemiBold;
+  src: url(./assets/fonts/Prompt-SemiBold.woff2);
+  font-weight: 600;
+   font-display: swap;
+}
+
+@font-face {
+  font-family: Prompt-Bold;
+  src: url(./assets/fonts/Prompt-Bold.woff2);
+  font-weight: 700;
+   font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat-Arabic;
+  src: url(./assets/fonts/Montserrat-Arabic-Regular.woff2);
+  font-weight: 400;
+   font-display: swap;
+}

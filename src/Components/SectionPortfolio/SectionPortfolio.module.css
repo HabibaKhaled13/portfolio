@@ -1,0 +1,22 @@
+
+.section {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../../assets/portfolio-section.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.section::after {
+  content: "";
+  position: absolute;
+inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 80% 20%,
+    rgba(0, 200, 255, 0.25),
+    transparent 60%
+  );
+}

@@ -1,0 +1,18 @@
+.DiCssTricks {
+  display: inline-block;
+  transform-origin: center;
+  animation: icon 6s linear infinite;
+}
+
+@keyframes icon {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.section{
+  background-image: url("../../assets/background.png");
+    background-size:cover;
+    background-position: center;
+   
+}
+

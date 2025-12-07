@@ -1,0 +1,7 @@
+.discuss {
+  background-image: url(../../assets/discuss.webp);
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
