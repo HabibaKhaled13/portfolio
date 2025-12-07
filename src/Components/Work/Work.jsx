@@ -18,7 +18,7 @@ import img15 from "../../assets/art.png";
 import img16 from "../../assets/jewerly.png";
 import img17 from "../../assets/printin.png";
 import img18 from "../../assets/wardrobe.png";
-import img19 from "../../assets/startup-portfolio.png";
+import img19 from "../../assets/Startup-Portfolio.png";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -65,7 +65,7 @@ const allProjects = [
     title: "Courses",
     link: "/courses",
   },
-    {
+  {
     id: 19,
     img: img19,
     title: "Startup",
@@ -189,7 +189,7 @@ const react = [
     title: "Courses",
     link: "/courses",
   },
-      {
+  {
     id: 19,
     img: img19,
     title: "Startup",

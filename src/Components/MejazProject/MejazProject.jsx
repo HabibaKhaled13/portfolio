@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/mejaz.png";
+import logo from "../../assets/Mejaz.png";
 import img from "../../assets/ahwatak.png";
 import style from "./MejazProject.module.css";
 import { HiArrowRightCircle } from "react-icons/hi2";

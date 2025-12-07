@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import img from "../../assets/Jewerly.png";
+import img from "../../assets/jewerly.png";
 import style from "./JewerlyProject.module.css";
 import { HiArrowRightCircle } from "react-icons/hi2";
 import { HiArrowLongRight } from "react-icons/hi2";
@@ -12,14 +12,14 @@ export default function JewelryProject() {
         <div className="flex flex-wrap md:flex-nowrap justify-between items-start gap-y-5">
           <div className="md:w-[35%] w-full md:sticky top-0  p-7 rounded-2xl bg-[#F5F4EF]">
             <div className="logo-of-project my-6">
-           <h2 className="text-2xl">Jewerly Art</h2>
+              <h2 className="text-2xl">Jewerly Art</h2>
             </div>
 
             <div className="techtools">
               <ul className="text-[11px] text-neutral-500 flex flex-wrap gap-2">
-                             <li>
+                <li>
                   <span className="inline-block py-1 px-4 bg-[#ECEAE6] rounded-full">
-                Shopify
+                    Shopify
                   </span>
                 </li>
                 <li>
@@ -37,14 +37,14 @@ export default function JewelryProject() {
                     JavaScript Native
                   </span>
                 </li>
-                          <li>
+                <li>
                   <span className="inline-block py-1 px-4 bg-[#ECEAE6] rounded-full">
-                   Add Shipping
+                    Add Shipping
                   </span>
                 </li>
-                          <li>
+                <li>
                   <span className="inline-block py-1 px-4 bg-[#ECEAE6] rounded-full">
-                  DSers (Ali Express)
+                    DSers (Ali Express)
                   </span>
                 </li>
                 <li>
@@ -52,9 +52,9 @@ export default function JewelryProject() {
                     Liquid
                   </span>
                 </li>
-                           <li>
+                <li>
                   <span className="inline-block py-1 px-4 bg-[#ECEAE6] rounded-full">
-                   Translate into Arabic
+                    Translate into Arabic
                   </span>
                 </li>
               </ul>
@@ -108,7 +108,7 @@ export default function JewelryProject() {
             <div className="btn-next-and-Prv flex justify-between md:mt-6 mt-10 flex-wrap gap-y-3 md:gap-y-0">
               <div className="previous md:w-[48%] w-full">
                 <Link
-                   to="/art-elegancy"
+                  to="/art-elegancy"
                   className="py-5 rounded-4xl px-6 inline-block md:text-start text-center text-white w-full bg-black transation-all duration-300 hover:bg-[#EB1C5F]"
                 >
                   <HiArrowLongLeft className="inline-block me-1 text-lg " />
